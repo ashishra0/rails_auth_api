@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  include CurrentUseConcern
+  include CurrentUserConcern
 
   def create
     user = User.find_by(email: params[:email]).try(:authenticate, params[:password])
