@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rb-readline', '~> 0.5.3'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'pry-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
