@@ -9,10 +9,10 @@ class SessionsController < ApplicationController
       render json: {
         status: :created,
         logged_in: true,
-        user: user
+        user: user.email
       }
     else
-      render json: { status: 401 }
+      render json: { status: 422 }
     end
   end
 
